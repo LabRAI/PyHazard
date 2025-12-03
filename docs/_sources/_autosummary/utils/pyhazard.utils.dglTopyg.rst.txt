@@ -1,0 +1,12 @@
+﻿pyhazard.utils.dglTopyg
+=======================
+
+.. automodule:: pyhazard.utils.dglTopyg
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      dgl_to_pyg_data
+   
