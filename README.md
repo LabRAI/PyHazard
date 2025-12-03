@@ -1,49 +1,42 @@
-# PyGIP
+# Pyhazard
 
-[![PyPI - Version](https://img.shields.io/pypi/v/PyGIP)](https://pypi.org/project/PyGIP)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/LabRAI/PyGIP/docs.yml)](https://github.com/LabRAI/PyGIP/actions)
-[![License](https://img.shields.io/github/license/LabRAI/PyGIP.svg)](https://github.com/LabRAI/PyGIP/blob/main/LICENSE)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/pygip)](https://github.com/LabRAI/PyGIP)
-[![Issues](https://img.shields.io/github/issues/LabRAI/PyGIP)](https://github.com/LabRAI/PyGIP)
-[![Pull Requests](https://img.shields.io/github/issues-pr/LabRAI/PyGIP)](https://github.com/LabRAI/PyGIP)
-[![Stars](https://img.shields.io/github/stars/LabRAI/PyGIP)](https://github.com/LabRAI/PyGIP)
-[![GitHub forks](https://img.shields.io/github/forks/LabRAI/PyGIP)](https://github.com/LabRAI/PyGIP)
+[![PyPI - Version](https://img.shields.io/pypi/v/PyHazard)](https://pypi.org/project/PyHazard)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/LabRAI/PyHazard/docs.yml)](https://github.com/LabRAI/PyHazard/actions)
+[![License](https://img.shields.io/github/license/LabRAI/PyHazard.svg)](https://github.com/LabRAI/PyHazard/blob/main/LICENSE)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/PyHazard)](https://github.com/LabRAI/PyHazard)
+[![Issues](https://img.shields.io/github/issues/LabRAI/PyHazard)](https://github.com/LabRAI/PyHazard)
+[![Pull Requests](https://img.shields.io/github/issues-pr/LabRAI/PyHazard)](https://github.com/LabRAI/PyHazard)
+[![Stars](https://img.shields.io/github/stars/LabRAI/PyHazard)](https://github.com/LabRAI/PyHazard)
+[![GitHub forks](https://img.shields.io/github/forks/LabRAI/PyHazard)](https://github.com/LabRAI/PyHazard)
 
-PyGIP is a Python library designed for experimenting with graph-based model extraction attacks and defenses. It provides
-a modular framework to implement and test attack and defense strategies on graph datasets.
+PyHazard is a Python library designed for using AI tools for hazard prediction. It provides a modular framework to implement and test prediction strategies on natural hazards.
 
 ## How to Cite
 
-If you find it useful, please considering cite the following work:
+If you find it useful, please consider citing the following work:
 
-```bibtex
-@article{li2025intellectual,
-  title={Intellectual Property in Graph-Based Machine Learning as a Service: Attacks and Defenses},
-  author={Li, Lincan and Shen, Bolin and Zhao, Chenxi and Sun, Yuxiang and Zhao, Kaixiang and Pan, Shirui and Dong, Yushun},
-  journal={arXiv preprint arXiv:2508.19641},
-  year={2025}
-}
+```
 ```
 
 
 ## Installation
 
-PyGIP supports both CPU and GPU environments. Make sure you have Python installed (version >= 3.8, <3.13).
+PyHazard supports both CPU and GPU environments. Make sure you have Python installed (version >= 3.8, <3.13).
 
 ### Base Installation
 
 First, install the core package:
 
 ```bash
-pip install PyGIP
+pip install PyHazard
 ```
 
-This will install PyGIP with minimal dependencies.
+This will install PyHazard with minimal dependencies.
 
 ### CPU Version
 
 ```bash
-pip install "PyGIP[torch,dgl]" \
+pip install "PyHazard[torch,dgl]" \
   --index-url https://download.pytorch.org/whl/cpu \
   --extra-index-url https://pypi.org/simple \
   -f https://data.dgl.ai/wheels/repo.html
@@ -52,7 +45,7 @@ pip install "PyGIP[torch,dgl]" \
 ### GPU Version (CUDA 12.1)
 
 ```bash
-pip install "PyGIP[torch,dgl]" \
+pip install "PyHazard[torch,dgl]" \
   --index-url https://download.pytorch.org/whl/cu121 \
   --extra-index-url https://pypi.org/simple \
   -f https://data.dgl.ai/wheels/torch-2.3/cu121/repo.html
@@ -60,47 +53,25 @@ pip install "PyGIP[torch,dgl]" \
 
 ## Quick Start
 
-Here’s a simple example to launch a Model Extraction Attack using PyGIP:
+Here’s a simple example to launch a Model Extraction Attack using PyHazard:
 
-```python
-from datasets import Cora
-from models.attack import ModelExtractionAttack0
-
-# Load the Cora dataset
-dataset = Cora()
-
-# Initialize the attack with a sampling ratio of 0.25
-mea = ModelExtractionAttack0(dataset, 0.25)
-
-# Execute the attack
-mea.attack()
+```
 ```
 
-This code loads the Cora dataset, initializes a basic model extraction attack (`ModelExtractionAttack0`), and runs the
-attack with a specified sampling ratio.
+This code loads the xxx dataset, initializes a basic hazard prediction baseline, and runs the
+prediction with a specified sampling ratio.
 
-And a simple example to run a Defense method against Model Extraction Attack:
+And a simple example to run:
 
-```python
-from datasets import Cora
-from models.defense import RandomWM
-
-# Load the Cora dataset
-dataset = Cora()
-
-# Initialize the attack with a sampling ratio of 0.25
-med = RandomWM(dataset, 0.25)
-
-# Execute the defense
-med.defend()
+```
 ```
 
-which runs the Random Watermarking Graph to defend against MEA.
+which runs xxx
 
 If you want to use cuda, please set environment variable:
 
 ```shell
-export PYGIP_DEVICE=cuda:0
+export PyHazard_DEVICE=cuda:0
 ```
 
 ## Implementation & Contributors Guideline
@@ -115,4 +86,4 @@ Refer to [Contributors Guideline](.github/CONTRIBUTING.md)
 
 ## Contact
 
-For questions or contributions, please contact blshen@fsu.edu.
+For questions or contributions, please contact xc25@fsu.edu.
