@@ -22,8 +22,6 @@ PyTorch notes (Python 3.8, CUDA 12.6 example):
       pip install torch --index-url https://download.pytorch.org/whl/cu126
       pip install pyhazards
 
-- No DGL or PyTorch Geometric is required.
-
 
 
 Requirements
