@@ -47,12 +47,10 @@ napoleon_numpy_docstring = True
 html_theme = 'furo'
 html_static_path = ['_static']
 html_baseurl = "https://labrai.github.io/PyHazard/"
-html_logo = "_static/logo.png"
-html_title = "PyHazard 1.0.1"
+html_logo = None
+html_title = "PyHazard 1.0.1 documentation"
 
 html_theme_options = {
     "navigation_with_keys": True,
     "sidebar_hide_name": False,
-    "light_logo": "_static/logo.png",
-    "dark_logo": "_static/logo.png",
 }
