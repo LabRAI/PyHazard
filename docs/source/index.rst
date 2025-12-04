@@ -4,8 +4,8 @@
      <img src="_static/logo.png" alt="PyHazards Icon" style="max-width: 260px; height: auto;">
    </div>
 
-.. image:: https://img.shields.io/pypi/v/PyHazards
-   :target: https://pypi.org/project/PyHazards
+.. image:: https://img.shields.io/pypi/v/pyhazards
+   :target: https://pypi.org/project/pyhazards
    :alt: PyPI Version
 
 .. image:: https://img.shields.io/github/actions/workflow/status/LabRAI/PyHazards/docs.yml

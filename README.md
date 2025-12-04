@@ -1,9 +1,9 @@
 # PyHazards
 
-[![PyPI - Version](https://img.shields.io/pypi/v/PyHazards)](https://pypi.org/project/PyHazards)
+[![PyPI - Version](https://img.shields.io/pypi/v/pyhazards)](https://pypi.org/project/pyhazards)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/LabRAI/PyHazards/docs.yml)](https://github.com/LabRAI/PyHazards/actions)
 [![License](https://img.shields.io/github/license/LabRAI/PyHazards.svg)](https://github.com/LabRAI/PyHazards/blob/main/LICENSE)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/PyHazards)](https://github.com/LabRAI/PyHazards)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/pyhazards)](https://github.com/LabRAI/PyHazards)
 [![Issues](https://img.shields.io/github/issues/LabRAI/PyHazards)](https://github.com/LabRAI/PyHazards)
 [![Pull Requests](https://img.shields.io/github/issues-pr/LabRAI/PyHazards)](https://github.com/LabRAI/PyHazards)
 [![Stars](https://img.shields.io/github/stars/LabRAI/PyHazards)](https://github.com/LabRAI/PyHazards)
